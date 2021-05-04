@@ -1,0 +1,80 @@
+.cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(7%, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(20%, 1fr));
+    grid-gap: 1rem;
+}
+
+.preview {
+    grid-column: 1 / end;
+    grid-row: 1;
+    background-color: green;
+    border-radius: 1rem;
+    border-style: 1px black;
+    padding: 1% 3%;
+    font-family: Orbitron;
+    font-size: 48px;
+}
+
+.numpad {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1 / span 8;
+    grid-row: 2;
+}
+
+.numpad > button {
+    width: 32%;
+    padding: 4% 0;
+    background-color: grey;
+    border: none;
+    border-radius: 1rem;
+    font-family: Orbitron;
+    font-size: 48px;
+    margin: 3px;
+}
+
+.numpad > button:active {
+    position: relative;
+    top: 2px;
+}
+
+.opers {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 9 / end;
+    grid-row: 2;
+}
+
+.opers > button {
+    width: 100%;
+    background-color: blue;
+    border: none;
+    border-radius: 1rem;
+    font-family: Orbitron;
+    font-size: 48px;
+    margin: 3px;
+}
+
+.opers > button:active {
+    position: relative;
+    top: 2px;
+}
+
+#oper-equals, #num-cls, #num-dec {
+    background-color: orange;
+}
+
+body {
+    background-color: #181a1b;
+    margin: 1rem;
+    font: 12px Arial;
+}
+
+@media screen and (orientation: portrait) {
+
+}
+
+@media screen and (orientation: landscape) {
+
+}
